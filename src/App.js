@@ -1,8 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
+import SearchBar from "./components/SearchBar";
 
-class App extends React.Component {
+
+class App extends Component {
+
     render() {
-        return <div>App Reporting in</div>
+        return (
+            <div className="ui container" style={{ marginTop: "10px" }}>
+                <SearchBar onSubmit={this.handleSubmit} />
+            </div>
+        )
     }
 }
 
